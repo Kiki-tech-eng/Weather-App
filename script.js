@@ -24,7 +24,7 @@ document.getElementById("checkBtn").addEventListener("click", function () {
   let url = "https://api.openweathermap.org/data/2.5/weather?q=" + city;
   url = url + "&appid=" + apiKey + "&units=metric";
 
-  console.log("Fetching from:", url); // beginner debugging
+  console.log("Fetching from:", url);
 
   fetch(url)
     .then(function (response) {
